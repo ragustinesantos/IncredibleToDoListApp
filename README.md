@@ -130,6 +130,7 @@
    - **Terminating a process on port 8081** – run the following commands to identify the id listening on port 8081 and terminate the process:
 
    <br>
+   
    ```bash
    sudo lsof -i :8081
    ```
@@ -137,15 +138,22 @@
    ```bash
    kill -9 &lt;PID&gt;
    ```
+
    <br>
    
    - **To run a port other than 8081** – run this command from the root of your project which makes use of the _port_ parameter (you my select another port other than the one in the example):
+
+   <br>
    
    ```bash
    npm start -- --port=8088_
    ```
+
+   <br>
    
    - **NPM locking** – to address instances where your npm locks, run the following commands while using the React Native CLI:
+
+   <br>
 
    ```bash
    sudo chown -R $USER ~/.npm
@@ -154,8 +162,12 @@
    ```bash      
    sudo chown -R $USER /usr/local/lib/node_modules
    ```
+
+   <br>
    
    - **react-native init hangs –** In cases where running the initialization script hangs (init) try to run these commands to allow you to see what may be causing the errors in the logs:
+
+   <br>
 
    ```bash
    npx react-native init –verbose
@@ -164,18 +176,28 @@
    ```bash
    npm run android -- --verbose
    ```
+
+   <br>
    
    - **Missing Dependencies** – to address missing dependencies, you may need to reinstall them by running this command:
+
+   <br>
 
    ```bash
    npm i -g
    ```
+
+   <br>
    
    - **Clearing Android Cache** – In instances where the application encounters build failures and fails to send it over to the Android emulator, you may clear the cache to allow for rebuilding of the tool by running the command:
+
+   <br>
 
    ```bash
    npm run android -- --clear-cache
    ```
+
+   <br>
 
 # **Resources**
 
