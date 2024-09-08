@@ -20,7 +20,6 @@
    ```bash
    Set-ExecutionPolicy Bypass -Scope Process -Force; \[System.Net.ServicePointManager\]::SecurityProtocol = \[System.Net.ServicePointManager\]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('<https://community.chocolatey.org/install.ps1>'))
    ```
-   <br>
    
    ## **Node and Java SE Development Kit (JDK)**
    
@@ -29,14 +28,12 @@
    ```bash
    choco install -y nodejs-lts microsoft-openjdk17
    ```
-   <br>
    
    Afterwards, you may check your installation by going to the command prompt and running the following command:
    
    ```bash
    node -v
    ```
-   <br>
    
    ## **Android Development Environment**
    
@@ -58,14 +55,10 @@
    1. Once you open Android Studio, you may click on “More Actions” button and select “SDK Manager”.
    2. Select the “SDK Platforms” tab and check the box next to “Show Package details in the bottom right corner.
    3. Expand the Android 14 (UpsideDownCake) selection and check the following items:
-      <br>
       1. Android SDK Platform 34
       2. Intel x86 Atom_64 System Image or Google APIs Intel x86 Atom System Image
-      <br>
    5. Select the “SDK Tools” tab and check the box next to “Show Package Details” and expand the Android SDK Build-Tools selection and select the following:
-      <br>
       1. 34.0.0
-      <br>
    7. Click “Apply” to download and install the Android SDK and build tools
 
 # **Configuration Steps**
@@ -108,7 +101,6 @@
    ```bash
    npx @react-native-community/cli@latest init AwesomeProject
    ```
-   <br>
    
    # **Running the Project**
    
@@ -117,7 +109,6 @@
    ```bash
    npm start
    ```
-   <br>
    
    This will start the Metro Development Server.
    
@@ -127,7 +118,6 @@
    ```bash
    npm run android
    ```
-   <br>
    
    To verify if your application is working, you should be able to see your app running in the Android emulator.
 
