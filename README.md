@@ -174,7 +174,7 @@
    - **Missing Dependencies** – to address missing dependencies, you may need to reinstall them by running this command:
 
    ```bash
-   npm i -g
+   npm i
    ```
 
    <br>
