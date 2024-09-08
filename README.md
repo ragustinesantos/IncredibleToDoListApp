@@ -142,7 +142,7 @@
    - **To run a port other than 8081** – run this command from the root of your project which makes use of the _port_ parameter (you my select another port other than the one in the example):
 
    ```bash
-   npm start -- --port=8088_
+   npm start -- --port=8088
    ```
 
    <br>
