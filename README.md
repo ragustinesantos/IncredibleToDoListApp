@@ -41,9 +41,9 @@
    
    Ensure that the following items are selected for the installation:
    
-   1. Android SDK_
-   2. Android SDK Platform_
-   3. Android Virtual Device_
+   1. Android SDK
+   2. Android SDK Platform
+   3. Android Virtual Device
    4. Performance (Intel ® HAXM) – Only if you are not already using HyperV
    
    After selecting this options from the wizard, you may proceed with the installation by clicking on “Next”.
@@ -87,10 +87,10 @@
    
    In Android Studio, if you’re using it for the first time, you will need to create a new AVD (Android Virtual Device).
    
-   1. Select “Create Virtual Device”
-   2. You may choose any phone from the list and click “Next”
-   3. Select UpsideDownCakeAPI Level 34 image
-   4. Click “Next” and then “Finish” to create the AVD.
+   1. Select _Create Virtual Device_
+   2. You may choose any phone from the list and click _Next_
+   3. Select _UpsideDownCakeAPI Level 34 image_
+   4. Click _Next_ and then _Finish_ to create the AVD.
    
    After these steps, click on the green triangle button next to the AVD to launch it.
    
