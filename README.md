@@ -13,11 +13,11 @@
 
    ## **Chocolatey**
    
-      Chocolatey is a package manager for Windows which can help you with the installation of the other applications required to run React Native.
-      
-      You can install Chocolatey using PowerShell but to ensure that your installation is successful, you will need to run the following:
-      
-      _Set-ExecutionPolicy Bypass -Scope Process -Force; \[System.Net.ServicePointManager\]::SecurityProtocol = \[System.Net.ServicePointManager\]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('<https://community.chocolatey.org/install.ps1>'))_
+   Chocolatey is a package manager for Windows which can help you with the installation of the other applications required to run React Native.
+   
+   You can install Chocolatey using PowerShell but to ensure that your installation is successful, you will need to run the following:
+   
+   _Set-ExecutionPolicy Bypass -Scope Process -Force; \[System.Net.ServicePointManager\]::SecurityProtocol = \[System.Net.ServicePointManager\]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('<https://community.chocolatey.org/install.ps1>'))_
    
    ## **Node and Java SE Development Kit (JDK)**
    
