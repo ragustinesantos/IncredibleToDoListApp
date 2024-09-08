@@ -104,7 +104,7 @@
    
    # **Running the Project**
    
-   1. After your project has been created, move to the directory of your project (ex. cd _ProjectName)_ and run the following command:
+   After your project has been created, move to the directory of your project (ex. cd _ProjectName)_ and run the following command:
 
    ```bash
    npm start
@@ -112,8 +112,9 @@
    
    This will start the Metro Development Server.
    
-   1. Once the necessary files have been installed by Metro, instructions from the CLI will ask you to type in a letter to select a development server to run. Type in “a” to run the Android selection
-   2. After all the set up has been completed by Metro, open another terminal and run the following command:
+   Once the necessary files have been installed by Metro, instructions from the CLI will ask you to type in a letter to select a development server to run. Type in “a” to run the Android selection.
+   
+   After all the set up has been completed by Metro, open another terminal and run the following command:
 
    ```bash
    npm run android
