@@ -111,30 +111,30 @@ To verify if your application is working, you should be able to see your app run
 
 # **Troubleshooting**
 
-- **Terminating a process on port 8081** – run the following commands to identify the id listening on port 8081 and terminate the process:
+**Terminating a process on port 8081** – run the following commands to identify the id listening on port 8081 and terminate the process:
 
   _sudo lsof -i :8081_
   _kill -9 &lt;PID&gt;_
 
-- **To run a port other than 8081** – run this command from the root of your project which makes use of the _port_ parameter (you my select another port other than the one in the example):
+**To run a port other than 8081** – run this command from the root of your project which makes use of the _port_ parameter (you my select another port other than the one in the example):
 
-_npm start -- --port=8088_
+   _npm start -- --port=8088_
 
-- **NPM locking** – to address instances where your npm locks, run the following commands while using the React Native CLI:
+**NPM locking** – to address instances where your npm locks, run the following commands while using the React Native CLI:
 
    _sudo chown -R $USER ~/.npm_
    _sudo chown -R $USER /usr/local/lib/node_modules_
 
-- **react-native init hangs –** In cases where running the initialization script hangs (init) try to run these commands to allow you to see what may be causing the errors in the logs:
+**react-native init hangs –** In cases where running the initialization script hangs (init) try to run these commands to allow you to see what may be causing the errors in the logs:
   
   _npx react-native init –verbose_
   _npm run android -- --verbose_
 
-- **Missing Dependencies** – to address missing dependencies, you may need to reinstall them by running this command:
+**Missing Dependencies** – to address missing dependencies, you may need to reinstall them by running this command:
 
    _npm i -g_
 
-- **Clearing Android Cache** – In instances where the application encounters build failures and fails to send it over to the Android emulator, you may clear the cache to allow for rebuilding of the tool by running the command:
+**Clearing Android Cache** – In instances where the application encounters build failures and fails to send it over to the Android emulator, you may clear the cache to allow for rebuilding of the tool by running the command:
 
    _npm run android -- --clear-cache_
 
