@@ -53,14 +53,14 @@
    
    Building a React Native App requires Android 14 (UpsideDownCake) SDK. While Android Studio installs the latest Android SDK by default, you can install additional SDKs through the SDK Manager in Android Studio:
    
-   1. Once you open Android Studio, you may click on “More Actions” button and select “SDK Manager”.
-   2. Select the “SDK Platforms” tab and check the box next to “Show Package details in the bottom right corner.
+   1. Once you open Android Studio, you may click on _More Actions_ button and select _SDK Manager_.
+   2. Select the _SDK Platforms_ tab and check the box next to _Show Package Details_ in the bottom right corner.
    3. Expand the Android 14 (UpsideDownCake) selection and check the following items:
       1. Android SDK Platform 34
       2. Intel x86 Atom_64 System Image or Google APIs Intel x86 Atom System Image
-   5. Select the “SDK Tools” tab and check the box next to “Show Package Details” and expand the Android SDK Build-Tools selection and select the following:
+   5. Select the _SDK Tools_ tab and check the box next to _Show Package Details_ and expand the Android SDK Build-Tools selection and select the following:
       1. 34.0.0
-   7. Click “Apply” to download and install the Android SDK and build tools
+   7. Click _Apply_ to download and install the Android SDK and build tools
 
 # **Configuration Steps**
 
@@ -82,7 +82,7 @@
    1. Open _Windows Control Panel_ and select _User Accounts_
    2. Select _User Accounts_ again and click on _Change my environment variables_
    3. The _Environment Variables_ window will then pop up and, to avoid path errors, in the _System Variables_ window, select the _Path_ variable and click _Edit._
-   4. Click New and add the platform-tools path to the list (default path: %LOCALAPPDATA%\\Android\\Sdk\\platform-tools)
+   4. Click _New_ and add the platform-tools path to the list (default path: %LOCALAPPDATA%\\Android\\Sdk\\platform-tools)
    
    ## **Configuring the virtual device**
    
