@@ -17,17 +17,17 @@
    
    You can install Chocolatey using PowerShell but to ensure that your installation is successful, you will need to run the following:
    
-   _Set-ExecutionPolicy Bypass -Scope Process -Force; \[System.Net.ServicePointManager\]::SecurityProtocol = \[System.Net.ServicePointManager\]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('<https://community.chocolatey.org/install.ps1>'))_
+      _Set-ExecutionPolicy Bypass -Scope Process -Force; \[System.Net.ServicePointManager\]::SecurityProtocol = \[System.Net.ServicePointManager\]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('<https://community.chocolatey.org/install.ps1>'))_
    
    ## **Node and Java SE Development Kit (JDK)**
    
    After you have installed Chocolatey on your device, right click on your command prompt and select “Run as Administrator”. Afterwards, run the following command:
    
-   _choco install -y nodejs-lts microsoft-openjdk17_
+      _choco install -y nodejs-lts microsoft-openjdk17_
    
    Afterwards, you may check your installation by going to the command prompt and running the following command:
    
-   _node -v_
+      _node -v_
    
    ## **Android Development Environment**
    
@@ -92,20 +92,20 @@
    
    To create a new project, in your terminal, go to the location where you want your project folder to be installed and run this command (you may replace “AwesomeProject” with any project name you desire):
    
-   _npx @react-native-community/cli@latest init AwesomeProject_
+      _npx @react-native-community/cli@latest init AwesomeProject_
    
    # **Running the Project**
    
    1. After your project has been created, move to the directory of your project (ex. cd _ProjectName)_ and run the following command:
-   
-   _npm start_
+
+            _npm start_
    
    This will start the Metro Development Server.
    
    1. Once the necessary files have been installed by Metro, instructions from the CLI will ask you to type in a letter to select a development server to run. Type in “a” to run the Android selection
    2. After all the set up has been completed by Metro, open another terminal and run the following command:
    
-   _npm run android_
+            _npm run android_
    
    To verify if your application is working, you should be able to see your app running in the Android emulator.
 
@@ -114,6 +114,7 @@
    **Terminating a process on port 8081** – run the following commands to identify the id listening on port 8081 and terminate the process:
    
       _sudo lsof -i :8081_
+      
       _kill -9 &lt;PID&gt;_
    
    **To run a port other than 8081** – run this command from the root of your project which makes use of the _port_ parameter (you my select another port other than the one in the example):
@@ -123,11 +124,13 @@
    **NPM locking** – to address instances where your npm locks, run the following commands while using the React Native CLI:
    
       _sudo chown -R $USER ~/.npm_
+      
       _sudo chown -R $USER /usr/local/lib/node_modules_
    
    **react-native init hangs –** In cases where running the initialization script hangs (init) try to run these commands to allow you to see what may be causing the errors in the logs:
      
       _npx react-native init –verbose_
+      
       _npm run android -- --verbose_
    
    **Missing Dependencies** – to address missing dependencies, you may need to reinstall them by running this command:
