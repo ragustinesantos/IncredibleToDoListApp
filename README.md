@@ -70,7 +70,7 @@
    1. Open _Windows Control Panel_
    2. Click on _User Accounts_, then click _User Accounts_ again.
    3. Click on _Change my environment variables_
-   4. Click on new and on the _Edit User Variable_ window place “ANDROID*HOME” on the \_Variable Name* field and place your Android SDK path in the _Variable Value_ (path ex. C:\\Users\\{username}\\AppData\\Local\\Android\\Sdk)
+   4. Click on _New_ and on the _Edit User Variable_ window place “ANDROID*HOME” on the \_Variable Name* field and place your Android SDK path in the _Variable Value_ (path ex. C:\\Users\\{username}\\AppData\\Local\\Android\\Sdk)
    
    To verify if the configuration was successfully implemented, you may copy and paste **_Get-ChildItem -Path Env:\\_** into _PowerShell_. In the result, you should be able to see that “ANDROID_HOME” has been added.
    
