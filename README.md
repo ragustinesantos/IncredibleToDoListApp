@@ -18,7 +18,7 @@
    You can install Chocolatey using PowerShell but to ensure that your installation is successful, you will need to run the following:
    
    ```bash
-   _Set-ExecutionPolicy Bypass -Scope Process -Force; \[System.Net.ServicePointManager\]::SecurityProtocol = \[System.Net.ServicePointManager\]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('<https://community.chocolatey.org/install.ps1>'))_
+   Set-ExecutionPolicy Bypass -Scope Process -Force; \[System.Net.ServicePointManager\]::SecurityProtocol = \[System.Net.ServicePointManager\]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('<https://community.chocolatey.org/install.ps1>'))_
    ```
    
    ## **Node and Java SE Development Kit (JDK)**
@@ -26,13 +26,13 @@
    After you have installed Chocolatey on your device, right click on your command prompt and select “Run as Administrator”. Afterwards, run the following command:
 
    ```bash
-   _choco install -y nodejs-lts microsoft-openjdk17_
+   choco install -y nodejs-lts microsoft-openjdk17_
    ```
 
    Afterwards, you may check your installation by going to the command prompt and running the following command:
    
    ```bash
-   _node -v_
+   node -v_
    ```
    
    ## **Android Development Environment**
@@ -99,7 +99,7 @@
    To create a new project, in your terminal, go to the location where you want your project folder to be installed and run this command (you may replace “AwesomeProject” with any project name you desire):
 
    ```bash
-   _npx @react-native-community/cli@latest init AwesomeProject_
+   npx @react-native-community/cli@latest init AwesomeProject_
    ```
    
    # **Running the Project**
@@ -107,7 +107,7 @@
    1. After your project has been created, move to the directory of your project (ex. cd _ProjectName)_ and run the following command:
 
    ```bash
-   _npm start_
+   npm start_
    ```
 
    This will start the Metro Development Server.
@@ -116,59 +116,59 @@
    2. After all the set up has been completed by Metro, open another terminal and run the following command:
 
    ```bash
-   _npm run android_
+   npm run android_
    ```
    
    To verify if your application is working, you should be able to see your app running in the Android emulator.
 
 # **Troubleshooting**
 
-   **Terminating a process on port 8081** – run the following commands to identify the id listening on port 8081 and terminate the process:
+   - **Terminating a process on port 8081** – run the following commands to identify the id listening on port 8081 and terminate the process:
 
    ```bash
-   _sudo lsof -i :8081_
+   sudo lsof -i :8081_
    ```
 
    ```bash
-   _kill -9 &lt;PID&gt;_
+   kill -9 &lt;PID&gt;_
    ```
 
-   **To run a port other than 8081** – run this command from the root of your project which makes use of the _port_ parameter (you my select another port other than the one in the example):
+   - **To run a port other than 8081** – run this command from the root of your project which makes use of the _port_ parameter (you my select another port other than the one in the example):
    
    ```bash
-   _npm start -- --port=8088_
+   npm start -- --port=8088_
    ```
    
-   **NPM locking** – to address instances where your npm locks, run the following commands while using the React Native CLI:
+   - **NPM locking** – to address instances where your npm locks, run the following commands while using the React Native CLI:
 
    ```bash
-   _sudo chown -R $USER ~/.npm_
+   sudo chown -R $USER ~/.npm_
    ```
 
    ```bash      
-   _sudo chown -R $USER /usr/local/lib/node_modules_
+   sudo chown -R $USER /usr/local/lib/node_modules_
    ```
    
-   **react-native init hangs –** In cases where running the initialization script hangs (init) try to run these commands to allow you to see what may be causing the errors in the logs:
+   - **react-native init hangs –** In cases where running the initialization script hangs (init) try to run these commands to allow you to see what may be causing the errors in the logs:
 
    ```bash
-   _npx react-native init –verbose_
+   npx react-native init –verbose_
    ```
 
    ```bash
-   _npm run android -- --verbose_
-   ```
-   
-   **Missing Dependencies** – to address missing dependencies, you may need to reinstall them by running this command:
-
-   ```bash
-   _npm i -g_
+   npm run android -- --verbose_
    ```
    
-   **Clearing Android Cache** – In instances where the application encounters build failures and fails to send it over to the Android emulator, you may clear the cache to allow for rebuilding of the tool by running the command:
+   - **Missing Dependencies** – to address missing dependencies, you may need to reinstall them by running this command:
 
    ```bash
-   _npm run android -- --clear-cache_
+   npm i -g_
+   ```
+   
+   - **Clearing Android Cache** – In instances where the application encounters build failures and fails to send it over to the Android emulator, you may clear the cache to allow for rebuilding of the tool by running the command:
+
+   ```bash
+   npm run android -- --clear-cache_
    ```
 
 # **Resources**
