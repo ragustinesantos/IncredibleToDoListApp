@@ -28,6 +28,7 @@
    ```bash
    choco install -y nodejs-lts microsoft-openjdk17
    ```
+   <br>
    
    Afterwards, you may check your installation by going to the command prompt and running the following command:
    
@@ -195,8 +196,6 @@
    ```bash
    npm run android -- --clear-cache
    ```
-
-   <br>
 
 # **Resources**
 
