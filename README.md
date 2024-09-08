@@ -18,7 +18,7 @@
    You can install Chocolatey using PowerShell but to ensure that your installation is successful, you will need to run the following:
    
    ```bash
-   Set-ExecutionPolicy Bypass -Scope Process -Force; \[System.Net.ServicePointManager\]::SecurityProtocol = \[System.Net.ServicePointManager\]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('<https://community.chocolatey.org/install.ps1>'))_
+   Set-ExecutionPolicy Bypass -Scope Process -Force; \[System.Net.ServicePointManager\]::SecurityProtocol = \[System.Net.ServicePointManager\]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('<https://community.chocolatey.org/install.ps1>'))
    ```
    
    ## **Node and Java SE Development Kit (JDK)**
@@ -26,13 +26,13 @@
    After you have installed Chocolatey on your device, right click on your command prompt and select “Run as Administrator”. Afterwards, run the following command:
 
    ```bash
-   choco install -y nodejs-lts microsoft-openjdk17_
+   choco install -y nodejs-lts microsoft-openjdk17
    ```
 
    Afterwards, you may check your installation by going to the command prompt and running the following command:
    
    ```bash
-   node -v_
+   node -v
    ```
    
    ## **Android Development Environment**
@@ -41,10 +41,10 @@
    
    Ensure that the following items are selected for the installation:
    
-   1. _Android SDK_
-   2. _Android SDK Platform_
-   3. _Android Virtual Device_
-   4. _Performance (Intel ® HAXM) – Only if you are not already using HyperV_
+   1. Android SDK_
+   2. Android SDK Platform_
+   3. Android Virtual Device_
+   4. Performance (Intel ® HAXM) – Only if you are not already using HyperV
    
    After selecting this options from the wizard, you may proceed with the installation by clicking on “Next”.
    
@@ -55,11 +55,15 @@
    1. Once you open Android Studio, you may click on “More Actions” button and select “SDK Manager”.
    2. Select the “SDK Platforms” tab and check the box next to “Show Package details in the bottom right corner.
    3. Expand the Android 14 (UpsideDownCake) selection and check the following items:
-      1. _Android SDK Platform 34_
-      2. _Intel x86 Atom_64 System Image or Google APIs Intel x86 Atom System Image_
-   4. Select the “SDK Tools” tab and check the box next to “Show Package Details” and expand the Android SDK Build-Tools selection and select the following:
-      1. _34.0.0_
-   5. Click “Apply” to download and install the Android SDK and build tools
+      
+      1. Android SDK Platform 34
+      2. Intel x86 Atom_64 System Image or Google APIs Intel x86 Atom System Image
+         
+   5. Select the “SDK Tools” tab and check the box next to “Show Package Details” and expand the Android SDK Build-Tools selection and select the following:
+      
+      1. 34.0.0
+         
+   7. Click “Apply” to download and install the Android SDK and build tools
 
 # **Configuration Steps**
 
@@ -99,7 +103,7 @@
    To create a new project, in your terminal, go to the location where you want your project folder to be installed and run this command (you may replace “AwesomeProject” with any project name you desire):
 
    ```bash
-   npx @react-native-community/cli@latest init AwesomeProject_
+   npx @react-native-community/cli@latest init AwesomeProject
    ```
    
    # **Running the Project**
@@ -107,7 +111,7 @@
    1. After your project has been created, move to the directory of your project (ex. cd _ProjectName)_ and run the following command:
 
    ```bash
-   npm start_
+   npm start
    ```
 
    This will start the Metro Development Server.
@@ -116,7 +120,7 @@
    2. After all the set up has been completed by Metro, open another terminal and run the following command:
 
    ```bash
-   npm run android_
+   npm run android
    ```
    
    To verify if your application is working, you should be able to see your app running in the Android emulator.
@@ -126,11 +130,11 @@
    - **Terminating a process on port 8081** – run the following commands to identify the id listening on port 8081 and terminate the process:
 
    ```bash
-   sudo lsof -i :8081_
+   sudo lsof -i :8081
    ```
 
    ```bash
-   kill -9 &lt;PID&gt;_
+   kill -9 &lt;PID&gt;
    ```
 
    - **To run a port other than 8081** – run this command from the root of your project which makes use of the _port_ parameter (you my select another port other than the one in the example):
@@ -142,33 +146,33 @@
    - **NPM locking** – to address instances where your npm locks, run the following commands while using the React Native CLI:
 
    ```bash
-   sudo chown -R $USER ~/.npm_
+   sudo chown -R $USER ~/.npm
    ```
 
    ```bash      
-   sudo chown -R $USER /usr/local/lib/node_modules_
+   sudo chown -R $USER /usr/local/lib/node_modules
    ```
    
    - **react-native init hangs –** In cases where running the initialization script hangs (init) try to run these commands to allow you to see what may be causing the errors in the logs:
 
    ```bash
-   npx react-native init –verbose_
+   npx react-native init –verbose
    ```
 
    ```bash
-   npm run android -- --verbose_
+   npm run android -- --verbose
    ```
    
    - **Missing Dependencies** – to address missing dependencies, you may need to reinstall them by running this command:
 
    ```bash
-   npm i -g_
+   npm i -g
    ```
    
    - **Clearing Android Cache** – In instances where the application encounters build failures and fails to send it over to the Android emulator, you may clear the cache to allow for rebuilding of the tool by running the command:
 
    ```bash
-   npm run android -- --clear-cache_
+   npm run android -- --clear-cache
    ```
 
 # **Resources**
