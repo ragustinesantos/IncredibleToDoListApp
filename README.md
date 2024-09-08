@@ -127,8 +127,8 @@ _npm start -- --port=8088_
 
 - **react-native init hangs –** In cases where running the initialization script hangs (init) try to run these commands to allow you to see what may be causing the errors in the logs:
   
-_- _npx react-native init –verbose_
-_- _npm run android -- --verbose_
+- _npx react-native init –verbose_
+- _npm run android -- --verbose_
 
 - **Missing Dependencies** – to address missing dependencies, you may need to reinstall them by running this command:
 
