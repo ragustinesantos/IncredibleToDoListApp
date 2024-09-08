@@ -109,6 +109,7 @@
    ```bash
    npm start
    ```
+   <br>
    
    This will start the Metro Development Server.
    
@@ -119,6 +120,7 @@
    ```bash
    npm run android
    ```
+   <br>
    
    To verify if your application is working, you should be able to see your app running in the Android emulator.
 
