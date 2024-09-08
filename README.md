@@ -129,6 +129,7 @@
 
    - **Terminating a process on port 8081** – run the following commands to identify the id listening on port 8081 and terminate the process:
 
+
    ```bash
    sudo lsof -i :8081
    ```
@@ -136,6 +137,7 @@
    ```bash
    kill -9 &lt;PID&gt;
    ```
+
 
    - **To run a port other than 8081** – run this command from the root of your project which makes use of the _port_ parameter (you my select another port other than the one in the example):
    
