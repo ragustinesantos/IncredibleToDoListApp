@@ -185,34 +185,26 @@
    npm run android -- --clear-cache
    ```
 
+   - **•	Rebuilding the Android Gradle File** – Another option for when the application encounters build errors is to go to the directory where your gradle file is found (ex. cd android) and run the following command:
+
+   ```bash
+   ./gradlew
+   ```
+
 # **Resources**
 
    The information on this document were referenced from these sources. For additional information you may refer to these resources as well:
    
-- <https://chocolatey.org/install>
+- <https://chocolatey.org/install> - In this link, you will be able to learn about setting up the Chocolatey package manager.
 
-o In this link, you will be able to learn about setting up the Chocolatey package manager.
+- <https://reactnative.dev/docs/set-up-your-environment> - This link will provide you with the necessary information about setting up the whole react native environment on your computer which includes the package managers, setting up the environment variables and installing the necessary mobile device emulators.
 
-- <https://reactnative.dev/docs/set-up-your-environment>
+- <https://intellipaat.com/blog/react-native-environment-setup/> - This link will be helpful in understanding the hardware and software requirements of React Native even before you begin setting it up in your device.
 
-o This link will provide you with the necessary information about setting up the whole react native environment on your computer which includes the package managers, setting up the environment variables and installing the necessary mobile device emulators.
+- <https://openjdk.org/projects/jdk/17/> - This link will provide you with more information about the Java Development Kit and will especially be helpful in instances where you're encountering installation issues with it.
 
-- <https://intellipaat.com/blog/react-native-environment-setup/>
+- <https://developer.android.com/studio/install> - This link will provide you with the necessary instructions for installing Android Studio along with its SDKs and development environment.
 
-o This link will be helpful in understanding the hardware and software requirements of React Native even before you begin setting it up in your device.
+- <https://reactnative.dev/docs/getting-started-without-a-framework> - In this link, you will be able learn how to initialize your first application after your environment has been set up. This includes instructions to start the development server and bridge the application to the AVD emulator.
 
-- <https://openjdk.org/projects/jdk/17/>
-
-o This link will provide you with more information about the Java Development Kit and will especially be helpful in instances where you're encountering installation issues with it.
-
-- <https://developer.android.com/studio/install>
-
-o This link will provide you with the necessary instructions for installing Android Studio along with its SDKs and development environment.
-
-- <https://reactnative.dev/docs/getting-started-without-a-framework>
-
-o In this link, you will be able learn how to initialize your first application after your environment has been set up. This includes instructions to start the development server and bridge the application to the AVD emulator.
-
-- <https://docs.npmjs.com/downloading-and-installing-node-js-and-npm>
-
-o This link is helpful if you have not downloaded the node package manager before hand as it will provide instructions on the installation and set up of Node.js
+- <https://docs.npmjs.com/downloading-and-installing-node-js-and-npm> - This link is helpful if you have not downloaded the node package manager before hand as it will provide instructions on the installation and set up of Node.js
