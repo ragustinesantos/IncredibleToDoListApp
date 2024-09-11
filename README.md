@@ -185,7 +185,9 @@
    npm run android -- --clear-cache
    ```
 
-   - **•	Rebuilding the Android Gradle File** – Another option for when the application encounters build errors is to go to the directory where your gradle file is found (ex. cd android) and run the following command:
+   <br>
+   
+   - **Rebuilding the Android Gradle File** – Another option for when the application encounters build errors is to go to the directory where your gradle file is found (ex. cd android) and run the following command:
 
    ```bash
    ./gradlew
