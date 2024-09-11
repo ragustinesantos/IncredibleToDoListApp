@@ -189,11 +189,30 @@
 
    The information on this document were referenced from these sources. For additional information you may refer to these resources as well:
    
-   - <https://chocolatey.org/install>
-   - <https://reactnative.dev/docs/set-up-your-environment>
-   - <https://intellipaat.com/blog/react-native-environment-setup/>
-   - <https://openjdk.org/projects/jdk/17/>
-   - <https://developer.android.com/studio/install>
-   - <https://reactnative.dev/docs/getting-started-without-a-framework>
-   - <https://nodejs.org/en/download/package-manager>
-   - <https://docs.npmjs.com/downloading-and-installing-node-js-and-npm>
+- <https://chocolatey.org/install>
+
+o In this link, you will be able to learn about setting up the Chocolatey package manager.
+
+- <https://reactnative.dev/docs/set-up-your-environment>
+
+o This link will provide you with the necessary information about setting up the whole react native environment on your computer which includes the package managers, setting up the environment variables and installing the necessary mobile device emulators.
+
+- <https://intellipaat.com/blog/react-native-environment-setup/>
+
+o This link will be helpful in understanding the hardware and software requirements of React Native even before you begin setting it up in your device.
+
+- <https://openjdk.org/projects/jdk/17/>
+
+o This link will provide you with more information about the Java Development Kit and will especially be helpful in instances where you're encountering installation issues with it.
+
+- <https://developer.android.com/studio/install>
+
+o This link will provide you with the necessary instructions for installing Android Studio along with its SDKs and development environment.
+
+- <https://reactnative.dev/docs/getting-started-without-a-framework>
+
+o In this link, you will be able learn how to initialize your first application after your environment has been set up. This includes instructions to start the development server and bridge the application to the AVD emulator.
+
+- <https://docs.npmjs.com/downloading-and-installing-node-js-and-npm>
+
+o This link is helpful if you have not downloaded the node package manager before hand as it will provide instructions on the installation and set up of Node.js
